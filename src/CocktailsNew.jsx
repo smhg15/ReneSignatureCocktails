@@ -27,7 +27,7 @@ const formatTextWithLineBreaks = (text) => {
 function Cocktails() {
   const [open, setOpen] = useState(false);
   const theme = useTheme();
-  const isMobileLandscape = useMediaQuery('(max-width: 800px) and (orientation: landscape)');
+  const isMobileLandscape = useMediaQuery('(orientation: landscape)');
 
   const baseStyle = {
     position: 'absolute',
@@ -41,17 +41,16 @@ function Cocktails() {
 
   const mobileLandscapeStyle = {
       ...baseStyle,
-      width: '70%', // Ajusta el ancho para dispositivos móviles en landscape
       bgcolor: 'background.paper', // Cambia el color de fondo
       display: 'flex',
-      width: '100vw',
+      width: '100dvw',
       height: 'auto',
-      maxHeight: '100vh',
+      maxHeight: '100dvh',
       alignItems: 'center ',
       overflow: 'scroll',
   }
   const textProfile = {
-    maxHeight:'70vh', 
+    maxHeight:'70dvh', 
     overflow:'scroll',}
 
 
