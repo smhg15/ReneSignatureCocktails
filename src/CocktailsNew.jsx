@@ -90,7 +90,7 @@ function Cocktails() {
                     <CardMedia
                     component="img"
                     height="240"
-                    image={`../src/assets/${cocktailData(cocktail).profileInfo.header}`}
+                    image={`/static/${cocktailData(cocktail).profileInfo.header}`}
                     alt={cocktail}
                     />
                     <CardContent>

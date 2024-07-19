@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import reñe from './assets/logoReñeSF.png'
+import reñe from '/static/logoReñeSF.png'
 import Cocktails from './CocktailsNew'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { IconButton, Link, Typography } from '@mui/material';

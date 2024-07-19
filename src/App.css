@@ -15,9 +15,9 @@
 
 /*index.html.body*/
 #background-blackboard{
-    width: 100vw;
-    height: 100vh;
-    background-image: url("../src/assets/background-pizarra2.jpg");
+    width: 100dvw;
+    height: 100dvh;
+    background-image: url("/static/background-pizarra2.jpg");
     background-size: cover;
     background-position: center;
     margin: auto;
@@ -25,22 +25,26 @@
 
 /*App.jsx.container*/
 .container-blackboard{
-    width: 95vw;
-    height: 95vh;
+    width: 95dvw;
+    height: 90dvh;
     display: flex;
     flex-direction: column;
     align-items: center; /* column: x axis */
+    justify-content: flex-start;
+    /* border: 2px solid #fafafa; */
+    margin: auto;
 }
 
 .reñe{
-    max-height: 25vh;
+    max-height: 24dvh;
     flex-grow: 0; 
     /* border: 2px solid #fafafa; */
+    margin: 0;
 }
 
 h1{
     font-family: 'HigherJump';
-    font-size: larger;
+    font-size: small;
     color: #fafafab1;
     flex-grow: 0;
     /* border: 2px solid #fafafa; */
@@ -48,10 +52,12 @@ h1{
 }
 footer{
     display: flex;
-    width: 95vw;
-    height: 100%;
+    width: 95dvw;
     justify-content: space-evenly;
     align-items: flex-end;
+    margin: 0;
+    /* border: 2px solid #fafafa; */
+
 }
 
 .p:hover{
@@ -59,7 +65,7 @@ footer{
 }
 
 .container-cocktails{
-    width: 100vw;
+    width: 100dvw;
     display: flex;
     flex-direction: row;
     align-items: flex-end; /* row: y axis */
@@ -68,7 +74,7 @@ footer{
 
 .cocktail{
     display: flex;
-    width: 12vw;
+    width: 12dvw;
     flex-direction: column;
     align-items: center; /* column: x axis */
     /* justify-content: stretch; /*column: y axis */
@@ -79,7 +85,7 @@ footer{
 
 svg {
     /* border: solid 2px #b2d2a2; */
-    width: 15vw;
+    width: 15dvw;
     transition: all 300ms;
     cursor: pointer;
 }
@@ -87,25 +93,25 @@ svg:hover{
     transform: scale(1.15);
 }
 
-.reñesjewel {filter: drop-shadow(0 0 2px #ad773fcc);width: 29vh;}
+.reñesjewel {filter: drop-shadow(0 0 2px #ad773fcc);width: 29vdh;}
 .reñesjewel:hover {filter: drop-shadow(0 0 15px #ad773fcc)}
-.aroha {filter: drop-shadow(0 0 2px #fbbe31cc);width: 30vh;}
+.aroha {filter: drop-shadow(0 0 2px #fbbe31cc);width: 30dvh;}
 .aroha:hover {filter: drop-shadow(0 0 15px #fbbe31cc)}
-.elixir {filter: drop-shadow(0 0 2px #ddab6acc);width: 25vh;}
+.elixir {filter: drop-shadow(0 0 2px #ddab6acc);width: 25dvh;}
 .elixir:hover {filter: drop-shadow(0 0 15px #ddab6acc)}
-.iceberg {filter: drop-shadow(0 0 2px #3b9ca2cc);width: 19vh;}
+.iceberg {filter: drop-shadow(0 0 2px #3b9ca2cc);width: 19dvh;}
 .iceberg:hover {filter: drop-shadow(0 0 15px #3b9ca2cc)}
-.sicilia {filter: drop-shadow(0 0 2px #0bd22ccc);width: 26vh;}
+.sicilia {filter: drop-shadow(0 0 2px #0bd22ccc);width: 26dvh;}
 .sicilia:hover {filter: drop-shadow(0 0 15px #0bd22ccc)}
-.orangebreeze {filter: drop-shadow(0 0 2px #f39532cc);width: 28vh;}
+.orangebreeze {filter: drop-shadow(0 0 2px #f39532cc);width: 28dvh;}
 .orangebreeze:hover {filter: drop-shadow(0 0 15px #f39532cc)}
-.maisgarden {filter: drop-shadow(0 0 2px #a60b28cc);width: 24vh;}
+.maisgarden {filter: drop-shadow(0 0 2px #a60b28cc);width: 24dvh;}
 .maisgarden:hover {filter: drop-shadow(0 0 15px #a60b28cc)}
 
-@media (max-width: 768px) and (orientation: portrait)
-    {
+@media (max-width: 768px) and (orientation: portrait){
+    
     .container-cocktails{
-        width: 100vw;
+        width: 95dvw;
         display: flex;
         flex-direction: row;
         align-items: flex-end; /* row: y axis */
@@ -121,11 +127,11 @@ svg:hover{
         width: 27vw;
         /* border: 2px solid #fafafa; */
     }
-    .reñesjewel {filter: drop-shadow(0 0 2px #ad773fcc);width: 20vh;}
-    .aroha {filter: drop-shadow(0 0 2px #fbbe31cc);width: 21vh;}
-    .elixir {filter: drop-shadow(0 0 2px #ddab6acc);width: 16vh;}
-    .iceberg {filter: drop-shadow(0 0 2px #3b9ca2cc);width: 12vh;}
-    .sicilia {filter: drop-shadow(0 0 2px #0bd22ccc);width: 17vh;}
-    .orangebreeze {filter: drop-shadow(0 0 2px #f39532cc);width: 19vh;}
-    .maisgarden {filter: drop-shadow(0 0 2px #a60b28cc);width: 15vh;}
+    .reñesjewel {filter: drop-shadow(0 0 2px #ad773fcc);width: 18dvh;}
+    .aroha {filter: drop-shadow(0 0 2px #fbbe31cc);width: 19dvh;}
+    .elixir {filter: drop-shadow(0 0 2px #ddab6acc);width: 14dvh;}
+    .iceberg {filter: drop-shadow(0 0 2px #3b9ca2cc);width: 10dvh;}
+    .sicilia {filter: drop-shadow(0 0 2px #0bd22ccc);width: 15dvh;}
+    .orangebreeze {filter: drop-shadow(0 0 2px #f39532cc);width: 17dvh;}
+    .maisgarden {filter: drop-shadow(0 0 2px #a60b28cc);width: 13dvh;}
 }
