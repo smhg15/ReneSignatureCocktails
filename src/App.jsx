@@ -18,7 +18,7 @@ function App() {
       <h1>Coctelería de Autor</h1>
       <Cocktails/>
       <footer>
-        <Link underline='none' href="https://www.linkedin.com/in/smhg15/" sx={{color: 'background.paper'}}>
+        <Link underline='none' href="mailto:alesfacamo@gmail.com" sx={{color: 'background.paper'}}>
           <p className='p'>Alessandro®</p>
         </Link>
         <IconButton
