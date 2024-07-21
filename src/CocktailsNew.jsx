@@ -43,14 +43,14 @@ function Cocktails() {
       ...baseStyle,
       bgcolor: 'background.paper', // Cambia el color de fondo
       display: 'flex',
-      width: '100dvw',
+      width: '100vw',
       height: 'auto',
-      maxHeight: '100dvh',
+      maxHeight: '100vh',
       alignItems: 'center ',
       overflow: 'scroll',
   }
   const textProfile = {
-    maxHeight:'70dvh', 
+    maxHeight:'70vh', 
     overflow:'scroll',}
 
 
