@@ -97,7 +97,7 @@ function Cocktails() {
                     {cocktailData(cocktail).profileInfo.title}
                     </Typography>
                     <Typography variant="body2" sx={textProfile}>
-                        {cocktail!='maisgarden'?formatTextWithLineBreaks(cocktailData(cocktail).profileInfo.body):formatTextWithLineBreaks(cocktailData(cocktail).profileInfo.body[(Math.floor(Math.random()*2))])}
+                        {formatTextWithLineBreaks(cocktailData(cocktail).profileInfo.body)}
                     </Typography>
                     <IconButton onClick={handleClose}>
                     <KeyboardReturnIcon />

@@ -19,21 +19,22 @@
 #background-blackboard{
     width: 100vw;
     height: 100vh;
-    background-image: url("/static/background-pizarra2.jpg");
-    background-size: cover;
-    background-position: center;
     margin: auto;
+    background-color: #000000;
 }
 
 /*App.jsx.container*/
 .container-blackboard{
-    width: 95vw;
-    height: 90vh;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center; /* column: x axis */
     justify-content: flex-start;
     /* border: 2px solid #fafafa; */
+    background-image: url("/static/background-pizarra2.jpg");
+    background-size: cover;
+    background-position: center;
     margin: auto;
 }
 
