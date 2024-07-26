@@ -88,7 +88,7 @@ function Cocktails() {
             <Card sx={isMobileLandscape ? mobileLandscapeStyle : baseStyle}>
                     <CardMedia
                     component="img"
-                    height="240"
+                    height={isMobileLandscape ? '400' : '240'}
                     image={`/static/${cocktailData(cocktail).profileInfo.header}`}
                     alt={cocktail}
                     />
