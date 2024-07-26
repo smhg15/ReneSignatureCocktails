@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { Fragment, useState } from 'react'
 import Backdrop from '@mui/material/Backdrop';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
@@ -12,15 +12,15 @@ import CocktailPath from './cocktails/CocktailPath'
 import cocktailData from './cocktails/CocktailData';
 import KeyboardReturnIcon from '@mui/icons-material/KeyboardReturn';
 
-const cocktails=['aroha','elixir','iceberg','maisgarden','orangebreeze','reñesjewel','sicilia']
+const cocktails=['elixir','iceberg','maisgarden','orangebreeze','reñesjewel','sicilia']//queda por añadir 'aroha'
 
 
 const formatTextWithLineBreaks = (text) => {
   return text.split('\n').map((line, index) => (
-    <React.Fragment key={index}>
+    <Fragment key={index}>
       {line}
       <br />
-    </React.Fragment>
+    </Fragment>
   ));
 };
 
@@ -34,24 +34,25 @@ function Cocktails() {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 400,
+    width: '100vw',
+    height: 'auto',
     bgcolor: 'background.paper',
     border: '2px solid #000',
   };
 
   const mobileLandscapeStyle = {
       ...baseStyle,
-      bgcolor: 'background.paper', // Cambia el color de fondo
       display: 'flex',
-      width: '100vw',
-      height: 'auto',
       maxHeight: '100vh',
       alignItems: 'center ',
       overflow: 'scroll',
   }
   const textProfile = {
     maxHeight:'70vh', 
-    overflow:'scroll',}
+    overflow:'scroll',
+    overflowX: 'hidden',
+    overflowY: 'hidden',
+    }
 
 
   function handleOpen(cocktail) {
