@@ -53,9 +53,10 @@ h1{
 footer{
     display: flex;
     width: 95vw;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-end;
-    margin: 0;
+    position: absolute;
+    bottom: 1vh;
 
 }
 .p{
@@ -128,9 +129,4 @@ svg:hover{
     .sicilia {filter: drop-shadow(0 0 2px #0bd22ccc);width: 15vh;}
     .orangebreeze {filter: drop-shadow(0 0 2px #f39532cc);width: 17vh;}
     .maisgarden {filter: drop-shadow(0 0 2px #a60b28cc);width: 13vh;}
-
-    footer{
-        position: absolute;
-        bottom: 2px;
-    }
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import './App.css'
 import reñe from '/static/logoReñeSF.png'
 import Cocktails from './CocktailsNew'
 import InstagramIcon from '@mui/icons-material/Instagram';

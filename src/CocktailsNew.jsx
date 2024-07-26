@@ -7,7 +7,6 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { IconButton, useMediaQuery, useTheme } from '@mui/material';
-import './App.css'
 import CocktailPath from './cocktails/CocktailPath'
 import cocktailData from './cocktails/CocktailData';
 import KeyboardReturnIcon from '@mui/icons-material/KeyboardReturn';
