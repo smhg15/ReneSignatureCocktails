@@ -55,10 +55,7 @@ footer{
     width: 95vw;
     justify-content: space-between;
     align-items: flex-end;
-    position: absolute;
-    bottom: 1vh;
-    padding-top: 2vh;
-
+    margin-top: 2dvh;;
 }
 .p{
     font-size: xx-small;
@@ -73,8 +70,6 @@ footer{
     flex-direction: row;
     align-items: flex-end;
     justify-content:center;
-    padding-bottom: 3vh;
-    margin-bottom: 3vh;
 }
 
 .cocktail{
@@ -132,13 +127,4 @@ svg:hover{
     .sicilia {filter: drop-shadow(0 0 2px #0bd22ccc);width: 15vh;}
     .orangebreeze {filter: drop-shadow(0 0 2px #f39532cc);width: 17vh;}
     .maisgarden {filter: drop-shadow(0 0 2px #a60b28cc);width: 13vh;}
-}
-@media (max-width: 768px) and (orientation: landscape) {
-    footer{
-        display: flex;
-        width: 95vw;
-        justify-content: space-between;
-        align-items: flex-end;
-        padding-top: 2vh;  
-    }
 }
