@@ -44,13 +44,20 @@ function Cocktails() {
       display: 'flex',
       maxHeight: '100vh',
       alignItems: 'center ',
-      overflow: 'scroll',
   }
   const textProfile = {
-    maxHeight:'70vh', 
+    maxHeight:'65vh', 
     overflow:'scroll',
-    overflowX: 'hidden',
-    overflowY: 'hidden',
+    '&::-webkit-scrollbar': {
+        width: '7px',
+        backgroundColor: '#fafafa',
+        borderRadius: '10px',
+      },
+      '&::-webkit-scrollbar-thumb': {
+        backgroundColor: '#2ca7b5',
+        border: 'solid 1px #fafafa'
+      },
+      overflowX: 'hidden',
     }
 
 
