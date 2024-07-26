@@ -133,3 +133,12 @@ svg:hover{
     .orangebreeze {filter: drop-shadow(0 0 2px #f39532cc);width: 17vh;}
     .maisgarden {filter: drop-shadow(0 0 2px #a60b28cc);width: 13vh;}
 }
+@media (max-width: 768px) and (orientation: landscape) {
+    footer{
+        display: flex;
+        width: 95vw;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-top: 2vh;  
+    }
+}
