@@ -55,6 +55,7 @@ function Cocktails() {
       },
       '&::-webkit-scrollbar-thumb': {
         backgroundColor: '#2ca7b5',
+        borderRadius: '10px',
         border: 'solid 1px #fafafa'
       },
       overflowX: 'hidden',
