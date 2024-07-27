@@ -39,7 +39,7 @@ function App() {
       <Cocktails/>
       <footer>
         <Link underline='none' href="mailto:alesfacamo@gmail.com" sx={{color: 'background.paper'}}>
-          <p className='p'>Alessandro®</p>
+          <p className='p'>Todos los cócteles son propiedad de Alessandro®</p>
         </Link>
         <IconButton
           size='small'
@@ -51,7 +51,7 @@ function App() {
           <Typography>rene1910.bcn</Typography>
         </IconButton>
         <Link underline='none' href="https://www.linkedin.com/in/smhg15/" sx={{color: 'background.paper'}}>
-          <p className='p'>#FreePlayerCodify</p>
+          <p className='p'>Desarrollado por #FreePlayerCodify</p>
         </Link>
       </footer>
     </div>
