@@ -6,11 +6,10 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { IconButton, useMediaQuery, useTheme } from '@mui/material';
+import { Avatar, IconButton, useMediaQuery, useTheme } from '@mui/material';
 import CocktailPath from './cocktails/CocktailPath'
 import cocktailData from './cocktails/CocktailData';
 import KeyboardReturnIcon from '@mui/icons-material/KeyboardReturn';
-
 const cocktails=['elixir','iceberg','maisgarden','orangebreeze','reñesjewel','sicilia']//queda por añadir 'aroha'
 
 
@@ -43,7 +42,12 @@ function Cocktails() {
       ...baseStyle,
       display: 'flex',
       maxHeight: '100vh',
-      alignItems: 'center ',
+  }
+  const textBox ={
+    alignItems: 'flex-start',
+    display: 'flex',
+    flexDirection: 'column',
+
   }
   const textProfile = {
     maxHeight:'65vh', 
@@ -100,10 +104,15 @@ function Cocktails() {
                     image={`/static/${cocktailData(cocktail).profileInfo.header}`}
                     alt={cocktail}
                     />
-                    <CardContent>
+                    <CardContent sx={textBox}>
                     <Typography gutterBottom variant="h5" component="div">
                     {cocktailData(cocktail).profileInfo.title}
                     </Typography>
+                    <Avatar sx={{ width: 24, height: 24 }} alt="Sabor predominante" src='/static/sabor.png'/>
+                    <Typography gutterBottom variant="body2" component="div">
+                    {cocktailData(cocktail).profileInfo.epigraph}
+                    </Typography>
+                    <Avatar sx={{ width: 24, height: 24, marginTop: 2}} alt="Sabor predominante" src='/static/historia.png'/>
                     <Typography variant="body2" sx={textProfile}>
                         {formatTextWithLineBreaks(cocktailData(cocktail).profileInfo.body)}
                     </Typography>
