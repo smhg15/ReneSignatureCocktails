@@ -19,7 +19,6 @@ function App() {
   const handleClose = () => setOpen(false);
 
   useEffect(() => {
-    // Simulate an API call
     setTimeout(() => {
       handleClose()
     }, 2000);
