@@ -105,9 +105,14 @@ function Cocktails() {
                     alt={cocktail}
                     />
                     <CardContent sx={textBox}>
+                    <div className='title-profile'>
                     <Typography gutterBottom variant="h5" component="div">
                     {cocktailData(cocktail).profileInfo.title}
                     </Typography>
+                    <IconButton onClick={handleClose}>
+                    <KeyboardReturnIcon />
+                    </IconButton>
+                    </div>
                     <Avatar sx={{ width: 24, height: 24 }} alt="Sabor predominante" src='/static/sabor.png'/>
                     <Typography gutterBottom variant="body2" component="div">
                     {cocktailData(cocktail).profileInfo.epigraph}
@@ -116,9 +121,6 @@ function Cocktails() {
                     <Typography variant="body2" sx={textProfile}>
                         {formatTextWithLineBreaks(cocktailData(cocktail).profileInfo.body)}
                     </Typography>
-                    <IconButton onClick={handleClose}>
-                    <KeyboardReturnIcon />
-                    </IconButton>
                     </CardContent>
             </Card>
         </Fade>

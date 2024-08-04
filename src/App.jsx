@@ -21,7 +21,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       handleClose()
-    }, 2000);
+    }, 3000);
   }, []);
 
   return (

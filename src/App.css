@@ -87,7 +87,11 @@ svg {
 svg:hover{
     transform: scale(1.15);
 }
-
+.title-profile{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
 .reñesjewel {filter: drop-shadow(0 0 2px #ad773fcc);width: 29vh;}
 .reñesjewel:hover {filter: drop-shadow(0 0 15px #ad773fcc)}
 .aroha {filter: drop-shadow(0 0 2px #fbbe31cc);width: 30vh;}
