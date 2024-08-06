@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import Backdrop from '@mui/material/Backdrop';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
@@ -67,9 +67,30 @@ function Cocktails() {
 
 
   function handleOpen(cocktail) {
-    return setOpen(cocktail);
+    setOpen(cocktail);
+    window.history.pushState({ modalOpen: true }, '');
   }
-  const handleClose = () => setOpen(false);
+
+  function handleClose() {
+    setOpen(false);
+    if (window.history.state && window.history.state.modalOpen) {
+      window.history.back(); // Elimina la entrada en el historial si fue añadida
+    }
+  }
+
+  useEffect(() => {
+    function handlePopState(event) {
+      if (event.state && event.state.modalOpen) {
+        setOpen(false);
+      }
+    }
+
+    window.addEventListener('popstate', handlePopState);
+
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, []);
   return (
     <div className='container-cocktails'>
       {cocktails.map((cocktail)=>{
